@@ -1,4 +1,4 @@
-# Machine Learning Challenge - Exoplanets
+# Exoplanet Classification - A Machine Learning Odyssey
 
 ## Objective
 
