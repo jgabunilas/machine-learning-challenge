@@ -17,7 +17,7 @@ The [random forest classifier](https://scikit-learn.org/stable/modules/generated
     - The data from the CSV file was imported using Pandas
     - All columns from the data frame except for 'koi_tce_plnt_num' and 'koi_disposition' were assigned as features (`X`). Thus, this approach assumes that the Threshold-Crossing Event (TCE) planet number is a descriptive label that does not factor into the exoplanet classification.
     - The disposition column of the data frame (`koi_disposition`) was assigned as the `y`.
-    - The data was split training and test sets using `train_test_split`.
+    - The data was split into training and test sets using `train_test_split`.
     - The training and testing feature data (`X_train` and `X_test`), all of which was numeric, was scaled using `MinMaxScaler`, creating the scaled parameters `X_train_scaled` and `X_test_scaled`.
 2. The `RandomForestClassifier` was invoked and fitted to the scaled X training and y training data with 200 trees being constructed for the forest. 75% of the dataset was allocated to training while the remainder was allocated to the test set.
 3. The model was tested against the test data
